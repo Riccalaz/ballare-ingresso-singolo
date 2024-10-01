@@ -14,13 +14,13 @@ public class thread extends Thread{
 		
 		
 		while(true) {
-			contatore.entra();
+			contatore.entra();  //incremento il contatore per simulare l'entrata
 			try {
 				Thread.sleep(ran.nextInt(700)+100);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
-			contatore.esce();
+			contatore.esce(); //decremento il contatore per simulare l'entrata
 			try {
 				Thread.sleep(ran.nextInt(700)+100);
 			} catch (InterruptedException e) {
